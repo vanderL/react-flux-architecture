@@ -7,7 +7,6 @@ export default function Cart() {
     return (
         <div>
             Olá! Sou o carrinho
-            <Link to='/'> Home </Link>
         </div>
 )
 }
