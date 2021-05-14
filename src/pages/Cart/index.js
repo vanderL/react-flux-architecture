@@ -8,13 +8,13 @@ import { formatPrice } from '../../util/format'
 
 import * as CartActions from '../../store/modules/cart/action';
 
-function Cart({ cart, removeFromCart, updateAmount, total }) {
+function Cart({ cart, removeFromCart, updateAmountRequest, total }) {
     function incrementAmount(product) {
-        updateAmount(product.id, product.amount + 1);
+        updateAmountRequest(product.id, product.amount + 1);
     }
 
     function decrementAmount(product) {
-        updateAmount(product.id, product.amount - 1);
+        updateAmountRequest(product.id, product.amount - 1);
     }
 
 
